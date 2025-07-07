@@ -9,7 +9,6 @@ public class numberOfDigits {
             System.out.print("Enter a number: ");
             int num = sc.nextInt();
 
-            char c = 'a','e',
 
             int count = 0;
            // int n = Math.abs(num);  // handles negative numbers
