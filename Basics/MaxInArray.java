@@ -33,8 +33,6 @@ public class MaxInArray {
 
             }
 
-
-
             for (int i = 0;i<arr.length;i++) {
 
                 if(max<arr[i] ){
@@ -43,12 +41,9 @@ public class MaxInArray {
 
                 }
 
-
             }
 
             System.out.println("max is  "+max);
-
-
 
 
     }
