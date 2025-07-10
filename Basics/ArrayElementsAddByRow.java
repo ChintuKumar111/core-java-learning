@@ -2,11 +2,7 @@ package Basics;
 
 public class ArrayElementsAddByRow {
 
-
-
-
         public static void main (String args[]) {
-
 
             int x = 0;
 
@@ -28,15 +24,8 @@ public class ArrayElementsAddByRow {
                 System.out.println(i+1+"row sum is : "+sum);
 
             }
-
-
-
-
         }
-
-
-
-
+        
     }
 
 
