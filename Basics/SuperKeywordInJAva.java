@@ -4,7 +4,7 @@ public class SuperKeywordInJAva {
         public static void main (String [] args) {
 
 
-            Creta creta = new Creta();
+            Scross creta = new Scross();
 
             creta.disp();
 
@@ -31,10 +31,10 @@ public class SuperKeywordInJAva {
 
     }
 
-    class Creta extends Carss {
+    class Scross extends Carss {
 
 
-        Creta(){
+        Scross(){
 
 
             super("mm","M#0 -d",15);
