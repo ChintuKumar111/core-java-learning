@@ -2,8 +2,8 @@ package Basics;
 
 public class LearningConstructor {
         public static void main(String[] args) {
-            Car bmw = new Car();
-            Car lambo = new Car("BMW", "520-d", 170);  // Object creation
+            Carss bmw = new Carss();
+            Carss lambo = new Carss("BMW", "520-d", 170);  // Object creation
         }
     }
 
