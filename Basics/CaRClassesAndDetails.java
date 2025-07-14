@@ -3,9 +3,9 @@ package Basics;
 public class CaRClassesAndDetails {
     public static void main (String [] args) {
 
-            Car bmw = new Car();
-            Car merce = new Car();
-            Car lambo = new Car();
+            Car1 bmw = new Car1();
+            Car1 merce = new Car1();
+            Car1 lambo = new Car1();
 
             bmw.brand= "Brawen Motors WorkShop";
             bmw.color = "Matt black";
@@ -18,7 +18,7 @@ public class CaRClassesAndDetails {
 
     }
 
-      class Car{
+      class Car1{
         String brand,color;
         int speed;
 
