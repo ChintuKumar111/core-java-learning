@@ -11,9 +11,16 @@ public class LearningConstructor {
         String brand, model;
         int speed;
 
-        Car(){
-            System.out.println("default");
+        Car() {
+            this.brand = "Default Brand";
+            this.model = "Default Model";
+            this.speed = 0;
+
+            System.out.println("Brand is  : " + brand);
+            System.out.println("Model is  : " + model);
+            System.out.println("Speed is  : " + speed + " km/h");
         }
+
 
         // Constructor with 3 parameters
         Car(String brand, String model, int speed) {
