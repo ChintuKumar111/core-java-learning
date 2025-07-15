@@ -7,8 +7,8 @@ class AbstractClassInJava {
 
         newCircle newCircle = new newCircle(23);
         newCircle.area(2,1);
-        newCircle.display();
 
+        newCircle.display();
         Rectangle rectangle1 = new Rectangle(4);
 
         rectangle1.area(4,5);
@@ -19,11 +19,11 @@ class AbstractClassInJava {
 
 
 
-abstract class Shape{
+abstract class ShapeIss {
 
     int number ;
 
-    Shape(int number ){ this.number = number;
+    ShapeIss(int number ){ this.number = number;
         System.out.println("Printing the absract constructor using abstarct class"+number);}
 
     abstract void area(int radius,int height);
@@ -34,7 +34,7 @@ abstract class Shape{
 
 }
 
-class newCircle extends Shape{
+class newCircle extends ShapeIss {
     int num ;
 
     newCircle(int num){
@@ -56,7 +56,7 @@ class newCircle extends Shape{
 
 }
 
-class Rectangle extends Shape{
+class Rectangle extends ShapeIss {
     int num;
 
     Rectangle(int num){super(num);
