@@ -2,52 +2,68 @@ package Basics;
 
 
 
+class AbstractClassInJava {
+    public static void main (String args[]){
 
-    abstract class Shape {
-        abstract void area();
+        newCircle newCircle = new newCircle(23);
+        newCircle.area(2,1);
+        newCircle.display();
 
-        void display() {
-            System.out.println("Displaying Shape info...");
-        }
+        Rectangle rectangle1 = new Rectangle(4);
+
+        rectangle1.area(4,5);
+
+
+    }
+}
+
+
+
+abstract class Shape{
+
+    int number ;
+
+    Shape(int number ){ this.number = number;
+        System.out.println("Printing the absract constructor using abstarct class"+number);}
+
+    abstract void area(int radius,int height);
+
+    void display() {
+        System.out.println("Showing the Dispaly");
     }
 
-    class Circle extends Shape {
-        int radius;
+}
 
-        Circle(int radius) {
-            this.radius = radius;
-        }
+class newCircle extends Shape{
+    int num ;
 
-        void area() {
-            double result = Math.PI * radius * radius;
-            System.out.println("Area of Circle: " + result);
-        }
-    }
-
-    class Rectangle extends Shape {
-        int base, height;
-
-        Rectangle(int base, int height) {
-            this.base = base;
-            this.height = height;
-        }
-
-        void area() {
-            int result = base * height;
-            System.out.println("Area of Rectangle: " + result);
-        }
-    }
-
-public class AbstractClassInJava {
-        public static void main(String[] args) {
-            Shape c1 = new Circle(5);
-            c1.area();
-            c1.display();
-
-            Shape r1 = new Rectangle(5, 10);
-            r1.area();
-            r1.display();
-        }
+    newCircle(int num){
+        super(num);
+        this.num = num;
     }
 
 
+
+    void area(int radius,int height) {
+
+
+        double result = Math.PI*radius*radius;
+        System.out.println("The arae of circle is  : "+result);
+
+
+    }
+
+
+}
+
+class Rectangle extends Shape{
+    int num;
+
+    Rectangle(int num){super(num);
+        this.num = num;}
+
+    void area(int base, int height) {
+        int result = (base *height)/2;
+        System.out.println("The arae of Rectangle is  : "+result);
+    }
+}
