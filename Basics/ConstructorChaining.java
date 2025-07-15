@@ -1,6 +1,6 @@
 package Basics;
 
-public class LearningConDeep {
+public class ConstructorChaining {
 
 
 
