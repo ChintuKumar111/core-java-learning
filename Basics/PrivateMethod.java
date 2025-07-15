@@ -12,7 +12,7 @@ public class PrivateMethod {
 
     }
 
-       class Samsung {
+      class Samsung {
 
         private  void md() {
             System.out.println("private method is calling");
@@ -25,7 +25,7 @@ public class PrivateMethod {
 
     }
 
-    class xrr extends Samsung {
+     class xrr extends Samsung {
 
         void disp() {System.out.println("inherited  class ");}
 
