@@ -26,7 +26,6 @@ public class SortingElementsInARRAYLIST {
 
             System.out.print("Entered number are  "+list +"\t");
 
-            System.out.println();
             list.sort(Comparator.reverseOrder());
 
             System.out.println
