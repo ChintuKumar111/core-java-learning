@@ -3,16 +3,22 @@ import java.util.*;
 import java.util.ArrayList;
 
 public class methodsInArrayList {
-    public static void  main(String args[]){
+    public static void  main(String args[]) {
 
-        ArrayList<String> a  = new ArrayList<>();
+                ArrayList<String> fruits = new ArrayList<>();
 
-        a.add("Tony Stark");
+                fruits.add("Apple");
+                fruits.add("Banana");
+                fruits.add("Mango");
 
-        a.add(1,"Captain america");
+                System.out.println("Fruits: " + fruits);
+                System.out.println("First Fruit: " + fruits.get(0));
 
-        a.get(1);
+                fruits.set(1, "Orange");
+                fruits.remove("Mango");
 
-        System.out.println(a);
-    }
-}
+                System.out.println("Updated List: " + fruits);
+                System.out.println("Size: " + fruits.size());
+            }
+        }
+
