@@ -18,7 +18,7 @@ public class ImplementationOFLinkedList {
 
   class Nodde {
     int data ;
-    Nodde next ;
+    Node1 next ;
 
     Nodde(int data ){
         this.data = data;
@@ -29,17 +29,17 @@ public class ImplementationOFLinkedList {
 
 class MyLinkedList{
 
-    Nodde head ;
+    Node1 head ;
 
     public void add(int data){
-        Nodde newNode = new Nodde(data);
+        Node1 newNode = new Node1(data);
 
         if(head==null){
             head = newNode;
             return;
         }
 
-        Nodde current = head;
+        Node1 current = head;
 
         while(current.next!=null){
 
@@ -53,7 +53,7 @@ class MyLinkedList{
 
     public void Print(){
 
-        Nodde current = head;
+        Node1 current = head;
 
         while(current!=null){
             System.out.print(current.data + " -> ");

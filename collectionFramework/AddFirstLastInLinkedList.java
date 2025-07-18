@@ -14,7 +14,7 @@ public class AddFirstLastInLinkedList {
     }
 }
 class Node{
-      Nodde next;
+      Node1 next;
       int data;
       Node(int data){
             this.data = data;
@@ -25,14 +25,14 @@ class Node{
 
 
     class MyList {
-        Nodde head;
+        Node1 head;
         public void add(int data) {
-            Nodde newNode = new Nodde(data);
+            Node1 newNode = new Node1(data);
             if(head==null) {
                 head=newNode;
                 return;
             }
-            Nodde current = head;
+            Node1 current = head;
             while(current.next!=null) {
                 current = current.next;
             }
@@ -40,17 +40,17 @@ class Node{
         }
        public void addFirst(int data)
         {
-            Nodde headNode  = new Nodde(data);
+            Node1 headNode  = new Node1(data);
             if(head ==null)
             {
                 head=headNode;
                 return;
             }
-            Nodde current = head;
+            Node1 current = head;
             headNode.next=head;
             head= headNode;        }
         public void PrintValue() {
-            Nodde current = head;
+            Node1 current = head;
             if(head == null) {System.out.println("List is empty");}
             while(current!=null) {
                 System.out.print(current.data +" -> ");
