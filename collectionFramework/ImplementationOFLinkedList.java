@@ -16,11 +16,11 @@ public class ImplementationOFLinkedList {
     }
 }
 
-class Node {
+  class Nodde {
     int data ;
-    Node next ;
+    Nodde next ;
 
-    Node(int data ){
+    Nodde(int data ){
         this.data = data;
         this.next= null;
 
@@ -29,17 +29,17 @@ class Node {
 
 class MyLinkedList{
 
-    Node head ;
+    Nodde head ;
 
     public void add(int data){
-        Node newNode = new Node(data);
+        Nodde newNode = new Nodde(data);
 
         if(head==null){
             head = newNode;
             return;
         }
 
-        Node current = head;
+        Nodde current = head;
 
         while(current.next!=null){
 
@@ -53,14 +53,13 @@ class MyLinkedList{
 
     public void Print(){
 
-        Node current = head;
+        Nodde current = head;
 
         while(current!=null){
-            System.out.println(current.data);
+            System.out.print(current.data + " -> ");
             current = current.next;
 
         }
-
-
+        System.out.println("null");  // End of list
     }
 }
