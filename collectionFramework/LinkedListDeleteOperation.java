@@ -4,14 +4,16 @@ public class LinkedListDeleteOperation {
     public static void main(String[] args) {
 
         LLDeleteOperation list = new LLDeleteOperation();
-        list.add(1);
-        list.add(4);
-        list.add(3);
-        list.add(2);
+        list.addLast(1);
+        list.addLast(4);
+        list.addLast(3);
+        list.addLast(2);
 
         list.Print();
         list.deleteFirst();
         list.lastDelete();
+        list.Print();
+        list.addFirst(6);
         list.Print();
 
     }
@@ -33,7 +35,19 @@ class LLDeleteOperation{
 
     Node1 head ;
 
-    public void add(int data){
+    public void addFirst(int data){
+        Node1 newNode = new Node1(data);
+        if(head ==null){
+            head= newNode;
+        }
+newNode.next = head;
+        head = newNode;
+
+
+        }
+
+
+    public void addLast(int data){
         Node1 newNode = new Node1(data);
 
         if(head==null){
