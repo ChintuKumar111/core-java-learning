@@ -14,18 +14,12 @@ public class PriorityQueueClass {
         pq.add(32);
         pq.add(33);
 
-        pq.offer(1);
-        pq.offer(2);
-        pq.offer(3);
-        pq.offer(4);
-        pq.offer(5);
-        pq.offer(6);
-        pq.offer(7);
+
 
 pq.poll();
 
 //it always goes for the largest value and if(true)
-// then print the number for increasing its print proper but for decrease not as aspected
+// then print the number for increasing its print proper but for decrease not  aspected
 // after next index
 
 //always provide min heap in increase order
