@@ -1,10 +1,5 @@
 package StartKotlin
-
-
-
-
-
-    fun main() {
+fun main() {
 
         println("Enter the number you want it to multiply")
         val input = readLine()?.toInt()

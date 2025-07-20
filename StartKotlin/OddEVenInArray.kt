@@ -1,8 +1,13 @@
 package StartKotlin
 
-fun main(){
+fun main() {
     println("Enter your digits ")
 
-    var Space = readLine()?.toInt()
+    var space = readLine()?.toInt()
 
+    if (space != null) {
+        if (space % 2 == 0)
+            println("Number is even") else println("number is odd")
+
+    }
 }

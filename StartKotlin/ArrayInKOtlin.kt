@@ -1,7 +1,7 @@
 package StartKotlin
 
 fun main(){
-    println("Array in kotlin learning")
+    println("Array in kotlin ")
 
     var arr = arrayOf(1,2,3)
 
