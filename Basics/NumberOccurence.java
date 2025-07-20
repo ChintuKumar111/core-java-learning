@@ -6,8 +6,8 @@ package Basics;
 
 import java.util.*;
 import java.lang.*;
-import java.io.*;
-public class NumnerOcurence {
+
+public class NumberOccurence {
 
         public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ public class NumnerOcurence {
 
             int question = sc.nextInt();
 
-            System.out.println("Enter the number you want to recieve that how much time it occur in given question");
+            System.out.println("Enter the number you want to get that how much time it occur in given question");
 
 
             int userInput = sc.nextInt();

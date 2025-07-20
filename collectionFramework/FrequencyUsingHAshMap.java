@@ -9,7 +9,7 @@ public class FrequencyUsingHAshMap {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Calculation the frequency of string");
-        System.out.println("Enter your word ");
+        System.out.println("Enter your word  ");
         String word = sc.nextLine();
 
         HashMap<Character,Integer> map = new HashMap<>();

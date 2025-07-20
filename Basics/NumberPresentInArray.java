@@ -2,10 +2,9 @@ package Basics;
 
 import java.util.*;
 import java.lang.*;
-import java.io.*;
 
 
-public class umberPresentInArray {
+public class NumberPresentInArray {
 
 
 

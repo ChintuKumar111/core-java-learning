@@ -8,15 +8,7 @@ import java.io.*;
 
 public class vowelsConsonantTotalNumber {
 
-
-
-
-
-
-
-
-
-        public static void main (String args[]) {
+    public static void main (String args[]) {
 
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter name or sentence to check how many vowels and consonat are their");
@@ -38,19 +30,11 @@ public class vowelsConsonantTotalNumber {
                 if(input.equals("a") || input.equals("e")||input.equals("i")||input.equals("o") || input.equals("u")) {
 
                     vowel++;
-
-                    value = input;
-
-
-
                 }else {
                     consonant++;
-                    value = input;
-                }
-
-
-            }
-            System.out.println("total number of vowe :"+value + " "+vowel);
+                      }
+           }
+            System.out.println("total number of vowel :"+value + " "+vowel);
             System.out.println("total number of  consonant : " + value + " "+consonant);
 
         }
