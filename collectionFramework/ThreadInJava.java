@@ -9,6 +9,12 @@ public class ThreadInJava {
         t2.start();
         MyThread th = new MyThread();
         th.start();
+        try {
+            th.join();
+            t2.join();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         for(int i = 1;i<1000;i++){
 
