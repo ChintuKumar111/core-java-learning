@@ -18,5 +18,10 @@ public class HasmapInJava {
         );
 
 
+        map.get(14);
+        System.out.println(map.get(12)
+        );
+
+
     }
 }
