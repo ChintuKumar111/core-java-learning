@@ -13,7 +13,7 @@ fun main(){
     book2.printDetails()
 }
 
-class Books(val title :String ,val price:Double){
+ private class Books(val title :String ,val price:Double){
 
     constructor(title: String):this(title,399.0)
 
@@ -21,6 +21,6 @@ class Books(val title :String ,val price:Double){
         println("Book Initialize : $title - RS $price")
     }
 
-    fun printDetails(){
+     fun printDetails(){
         println("Title : $title ,Price $price")
     }}
