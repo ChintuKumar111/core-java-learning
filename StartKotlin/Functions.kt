@@ -16,17 +16,15 @@ fun AreaOfCircle(num : Double ,num2 :Double) :Double{
 
     val pi = 3.14
     return  pi*num *num2
-
 }
-
 fun AreaOfCircle(num :Int ,num2 : Int):Int{
 
-    val result= num+num2
 
+    val result= num+num2
 
     return result
 
 
-
+    val n = readln()
 
 }
