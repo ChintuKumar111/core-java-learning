@@ -10,14 +10,20 @@ fun main(){
     obj = Circle()
     obj = Rectangle()
 
-    var arr = arrayOf(Square(),Rectangle(),Circle())
-
-    for(i in arr)
-        i.draw()
-
-
+//    var arr = arrayOf(Square(),Rectangle(),Circle())
+//
+//    for(i in arr)
+//        i.draw()
 
 
+    val newmethod = newMethod(obj)
+    println(newmethod)
+
+
+}
+
+fun newMethod(shape : Shape){
+    println(shape.draw())
 }
 
 open class Shape{
