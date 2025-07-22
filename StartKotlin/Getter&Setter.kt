@@ -10,19 +10,21 @@ fun main(){
 
 
 }
-class Anime ( nameParam:String , ageParam:Int){
+class Anime(name:String ,age:Int){
 
-    val name = nameParam
-
+    val name = name
         get(){
-         return   field.uppercase()
+            return field.uppercase()
         }
-    var age = ageParam
+    var age = age
         set(value){
             if(value>0){
-                field = value
-            }else {
-                println("A age cannot be in negative ")
+                field= value
+            }else{
+
+                println("A negative number can't set for age ")
             }
         }
+
+
 }
