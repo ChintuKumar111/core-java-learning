@@ -6,7 +6,10 @@ val bigCalculation: Int by lazy {
 }
 
 fun main() {
+
     println("Before using bigCalculation")
     println(bigCalculation)  // First time → does calculation
     println(bigCalculation)  // Next time → just returns cached result
 }
+
+//goes for one by one and execute once then return cached value
